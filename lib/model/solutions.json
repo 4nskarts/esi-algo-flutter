@@ -1,0 +1,76 @@
+{
+  "S1": [
+    {
+      "id": 3,
+      "topic": "loops and conditionals",
+      "exercises": [
+        {
+          "id": 1,
+          "description": "Write an algorithm that reads a number N less than or equal to 10. If the user enters an incorrect number, the program should insist until it is correct.",
+          "code": "program CorrectNumber;\n\nvar\n  N: integer;\n\nbegin\n  repeat\n    write('Enter a number (N <= 10): ');\n    readln(N);\n  until (N >= 0) and (N <= 10);\n\n  writeln('The correct number is: ', N);\n  readln;\nend.",
+          "intuition": ""
+        },
+        {
+          "id": 2,
+          "description": "Write an algorithm that reads a response 'A', 'B', or 'C'. If the response is different, the user should receive a message 'Incorrect answer' and be prompted to enter another response.",
+          "code": "program CheckAnswer;\n\nvar\n  answer: char;\n\nbegin\n  repeat\n    write('Enter an answer (A, B, or C): ');\n    readln(answer);\n\n    if (answer <> 'A') and (answer <> 'B') and (answer <> 'C') then\n      writeln('Incorrect answer');\n  until (answer = 'A') or (answer = 'B') or (answer = 'C');\n\n  writeln('The answer is correct: ', answer);\n  readln;\nend.",
+          "intuition": ""
+        },
+        {
+          "id": 3,
+          "description": "Write an algorithm that reads an integer number N and displays the word 'Bonjour' N times.",
+          "code": "program PrintBonjour;\n\nvar\n  N, i: integer;\n\nbegin\n  write('Entrez un nombre entier N: ');\n  readln(N);\n\n  for i := 1 to N do\n    writeln('Bonjour');\n\n  readln;\nend.",
+          "intuition": ""
+        },
+        {
+          "id": 4,
+          "description": "Write an algorithm that reads an integer number N, calculates, and displays the sum of the first N positive integers..",
+          "code": "program SumOfIntegers;\n\nvar\n  N, i, sum: integer;\n\nbegin\n  write('Entrez un nombre entier N: ');\n  readln(N);\n\n  sum := 0;\n\n  for i := 1 to N do\n    sum := sum + i;\n\n  writeln('La somme des ', N, ' premiers entiers positifs est : ', sum);\n\n  readln;\nend.",
+          "intuition": ""
+        },
+        {
+          "id": 5,
+          "description": "Write an algorithm that reads an integer number N, calculates, and displays the number 2 raised to the power of N using successive multiplications.",
+          "code": "program PowerOfTwo;\n\nvar\n  N, i: integer;\n  result: longint;\n\nbegin\n  write('Entrez un nombre entier N: ');\n  readln(N);\n\n  result := 1;\n\n  for i := 1 to N do\n    result := result * 2;\n\n  writeln('Le nombre 2 à la puissance ', N, ' est : ', result);\n\n  readln;\nend.",
+          "intuition": ""
+        },
+        {
+          "id": 6,
+          "description": "Write an algorithm that reads an integer number N, calculates, and displays the factorial of N..",
+          "code": "program Factorial;\n\nvar\n  N, i: integer;\n  factorial: longint;\n\nbegin\n  write('Entrez un nombre entier N: ');\n  readln(N);\n\n  factorial := 1;\n\n  for i := 2 to N do\n    factorial := factorial * i;\n\n  writeln('La factorielle de ', N, ' est : ', factorial);\n\n  readln;\nend.",
+          "intuition": ""
+        },
+        {
+          "id": 7,
+          "description": "Write an algorithm that reads an integer number N and displays the sum of the first N positive odd integers.",
+          "code": "program SumOfOddNumbers;\n\nvar\n  N, i, sum: integer;\n  oddNumber: integer;\n\nbegin\n  write('Entrez un nombre entier N: ');\n  readln(N);\n\n  sum := 0;\n  oddNumber := 1;\n\n  for i := 1 to N do\n  begin\n    sum := sum + oddNumber;\n    oddNumber := oddNumber + 2;\n  end;\n\n  writeln('La somme des ', N, ' premiers nombres entiers positifs impairs est : ', sum);\n\n  readln;\nend.",
+          "intuition": ""
+        },
+        {
+          "id": 8,
+          "description": "Write an algorithm that reads a number N. Then it reads N numbers and displays the largest number.",
+          "code": "program FindLargestNumber;\n\nvar\n  N, i, number, largest: integer;\n\nbegin\n  write('Entrez un nombre entier N: ');\n  readln(N);\n\n  write('Entrez le premier nombre : ');\n  readln(largest);\n\n  for i := 2 to N do\n  begin\n    write('Entrez le nombre suivant : ');\n    readln(number);\n\n    if number > largest then\n      largest := number;\n  end;\n\n  writeln('Le nombre le plus grand est : ', largest);\n\n  readln;\nend.",
+          "intuition": ""
+        },
+        {
+          "id": 9,
+          "description": "Write an algorithm that reads a number N. Then it reads N numbers and displays the largest number and the smallest number.",
+          "code": "program FindMinMaxNumbers;\n\nvar\n  N, i, number, smallest, largest: integer;\n\nbegin\n  write('Entrez un nombre entier N: ');\n  readln(N);\n\n  write('Entrez le premier nombre : ');\n  readln(smallest);\n  largest := smallest;\n\n  for i := 2 to N do\n  begin\n    write('Entrez le nombre suivant : ');\n    readln(number);\n\n    if number > largest then\n      largest := number;\n\n    if number < smallest then\n      smallest := number;\n  end;\n\n  writeln('Le nombre le plus grand est : ', largest);\n  writeln('Le nombre le plus petit est : ', smallest);\n\n  readln;\nend.",
+          "intuition": ""
+        },
+        {
+          "id": 10,
+          "description": "Write an algorithm that acts as a calculator for numbers. It reads either digits or operators (*, -, +) until the input of =. It displays the result at the end. Use the function to convert a single character to an integer.",
+          "code": "program Calculator;\n\nvar\n  input: string;\n  operator: char;\n  number, result: integer;\n  validInput: boolean;\n\nfunction CharToInt(ch: char): integer;\nbegin\n  case ch of\n    '0': CharToInt := 0;\n    '1': CharToInt := 1;\n    '2': CharToInt := 2;\n    '3': CharToInt := 3;\n    '4': CharToInt := 4;\n    '5': CharToInt := 5;\n    '6': CharToInt := 6;\n    '7': CharToInt := 7;\n    '8': CharToInt := 8;\n    '9': CharToInt := 9;\n  else\n    CharToInt := -1;  // Return -1 for invalid input\n  end;\nend;\n\nbegin\n  result := 0;\n  validInput := true;\n\n  repeat\n    write('Entrez un chiffre ou un opérateur (+, -, *), ou = pour terminer : ');\n    readln(input);\n\n    if Length(input) = 1 then\n    begin\n      case input[1] of\n        '+', '-', '*':\n          begin\n            operator := input[1];\n            validInput := true;\n          end;\n        '=':\n          begin\n            validInput := true;\n            break;\n          end;\n      else\n        number := CharToInt(input[1]);\n        if number <> -1 then\n        begin\n          validInput := true;\n          case operator of\n            '+': result := result + number;\n            '-': result := result - number;\n            '*': result := result * number;\n          end;\n        end\n        else\n          validInput := false;\n      end;\n    end\n    else\n      validInput := false;\n\n    if not validInput then\n      writeln('Entrée invalide. Veuillez entrer un chiffre ou un opérateur (+, -, *) valide.');\n\n  until input = '=';\n\n  writeln('Le résultat est : ', result);\n\n  readln;\nend.",
+          "intuition": ""
+        },
+        {
+          "id": 11,
+          "description": "Write an algorithm that reads a positive and non-zero integer N. Write an algorithm that calculates the Nth number in the Fibonacci sequence. Fibonacci numbers are calculated as follows: F(0) = 0. F(1) = 1. F(i) = F(i-1) + F(i-2) for i > 1.",
+          "code": "program Fibonacci;\n\nvar\n  N, i: integer;\n  fibN, fibPrev, fibPrevPrev: integer;\n\nbegin\n  write('Entrez un entier positif N : ');\n  readln(N);\n\n  fibPrevPrev := 0;\n  fibPrev := 1;\n  fibN := 0;\n\n  if N = 0 then\n    fibN := 0\n  else if N = 1 then\n    fibN := 1\n  else\n  begin\n    for i := 2 to N do\n    begin\n      fibN := fibPrev + fibPrevPrev;\n      fibPrevPrev := fibPrev;\n      fibPrev := fibN;\n    end;\n  end;\n\n  writeln('Le ', N, 'ème nombre de la suite de Fibonacci est : ', fibN);\n\n  readln;\nend.",
+          "intuition": ""
+        }
+      ]
+    }
+  ]
+}
