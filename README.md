@@ -1,4 +1,4 @@
-# esi_algo
+# ESI Algorithms & Data Structure
 
 A new Flutter project.
 
