@@ -13,7 +13,7 @@ ESI Algo is a Flutter-based web application that serves as a dedicated LeetCode 
 
 ## Features
 
-1. **User Authentication**: Students can sign up and log in using their email or social media accounts to access the app's features.
+1. **User Authentication**: Students can sign up and log in using their uesrname and password access the app's features.
 
 2. **Problem Sets**: ESI Algo offers a wide range of problem sets covering various data structures and algorithms topics, allowing students to practice problems of different difficulty levels.
 
