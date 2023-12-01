@@ -1,96 +1,49 @@
-# ESI Algo - LeetCode Clone for First Year Computer Science Students
+# ESI Algo Flutter
 
+Welcome to my first Flutter application - a collection of solutions to Data Structures and Algorithms (DSA) problems! 🚀
 
-ESI Algo is a Flutter-based web application that serves as a dedicated LeetCode clone, designed to help first-year computer science students study data structures and algorithms. This project aims to provide an interactive platform where students can practice coding problems, improve problem-solving skills, and reinforce their understanding of essential algorithms and data structures.
+## Overview
 
-## Table of Contents
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
+This repository is a playground for exploring Dart and Flutter while tackling various DSA challenges. The code is not polished, and it's far from professional, but it represents my learning journey in the world of mobile app development.
 
 ## Features
 
-1. **User Authentication**: Students can sign up and log in using their uesrname and password access the app's features.
+- **Algorithm Solutions:** Browse through the source code to find my attempts at solving DSA problems.
+- **Flutter Exploration:** Witness my learning process with Flutter as I experiment with widgets and app development concepts.
+- **Work in Progress:** Expect messy code, rookie mistakes, and frequent updates as I navigate the world of Dart and Flutter.
 
-2. **Problem Sets**: ESI Algo offers a wide range of problem sets covering various data structures and algorithms topics, allowing students to practice problems of different difficulty levels.
+## Prerequisites
 
-3. **Coding Environment**: Users can write and test their code directly within the app using an integrated code editor.
+Before diving into this repository, make sure you have the following installed:
 
-4. **Language Support**: ESI Algo supports Pascal Language for now, which is the language used by students in the higher school of computer science Sidi-bel Abbes.
+- [Flutter SDK](https://flutter.dev/docs/get-started/install)
+- Your favorite code editor (I use Visual Studio Code)
 
-5. **Solution Verification**: The app provides automated test cases to validate the correctness of the solutions submitted by students.
+## Getting Started
 
-
-## Installation
-
-To use the ESI Algo app, follow these steps:
-
-1. Clone the repository using the following command:
-   ```
-   git clone https://github.com/your-username/esi-algo.git
+1. Clone this repository to your local machine.
+   ```bash
+   git clone https://github.com/4nskarts/esi-algo-flutter.git
    ```
 
-2. Navigate to the project directory:
-   ```
-   cd esi-algo
-   ```
+2. Open the project in your preferred Flutter-compatible IDE.
 
-3. Install the required dependencies by running:
-   ```
-   flutter pub get
-   ```
-
-4. Run the app on an emulator or physical device:
-   ```
+3. Run the app on an emulator or physical device.
+   ```bash
    flutter run
    ```
 
-## Usage
+4. Explore the code, try to understand my solutions, and feel free to suggest improvements or share your own DSA solutions!
 
-1. Launch the ESI Algo app on your device.
+## Contributions
 
-2. Sign up or log in using your email or social media account.
+This repository is a personal learning project, but I welcome contributions, suggestions, and friendly discussions. If you have a better way of solving a problem or want to add features, open an issue or submit a pull request.
 
-3. Browse the available problem sets and select the one you want to work on.
+## Disclaimer
 
-4. Read the problem description and constraints carefully.
+This is my first attempt at Flutter, and the code may not follow best practices. I'm here to learn, so any feedback is highly appreciated!
 
-5. Write your code in the integrated code editor.
-
-6. Test your code with the provided test cases to ensure its correctness.
-
-7. Submit your solution and check the results.
-
-## Technologies Used
-
-- **Flutter**: Flutter is a UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase.
-
-- **Dart**: Dart is the programming language used by Flutter to build applications.
-
-- **FastAPI**: FastAPI is used for building the backend of the application, providing APIs for user authentication, problem sets, progress tracking, and more.
-
-- **GetX**: GetX is utilized for state management in the Flutter app, making it easier to handle and update the application's state.
-
-
-## Contributing
-
-Contributions to ESI Algo are welcome and encouraged! If you would like to contribute, please follow these steps:
-
-1. Fork the repository.
-
-2. Create a new branch for your feature or bug fix.
-
-3. Implement your changes and ensure that the codebase is still functional.
-
-4. Commit your changes and push them to your fork.
-
-5. Submit a pull request to the main repository.
-
-Please ensure that your pull request includes a clear description of the changes you have made and why they are beneficial.
-
-## License
-
-ESI Algo is released under the [MIT License](LICENSE), which allows for both personal and commercial use. You are free to modify and distribute the project as long as you include the original license file and provide appropriate attribution.
+Happy coding! 🚀
+```
+Feel free to customize the content based on your preferences and the specific details of your project.
+```
